@@ -1,0 +1,77 @@
+/* --------CABECERA LOGO-------- */
+
+h1 {
+  font-size: 70px;
+  font-family: "Ranchers", cursive;
+}
+/* #cabeceraLogo h1 {
+  position: absolute;
+  display: inline-block;
+}
+con esto se me monta una cosa encima de otra. Vamos, que he ido haciendo pruebas*/
+
+#logo {
+  width: 85px;
+  border: 1px solid black;
+  margin: 25px;
+}
+#cabeceraLogo {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(245, 245, 220, 0.829);
+  align-items: baseline;
+}
+/* -------BARRA MENÚ CON FORMULARIO-------- */
+#formularioSuperior {
+  font-family: "Ranchers", cursive;
+  border: 2px solid brown;
+  background-color: burlywood;
+  text-decoration: none;
+  color: brown;
+  display: flex;
+  justify-content: flex-end;
+  /* padding-left: 0px; no sirve */
+}
+#elementosMenu li {
+  display: inline-block;
+  /* justify-content: space-evenly; no sirve */
+}
+/* No consigo arreglar que estén en el mismo nivel los elementos del menú y el link del formulario así que sigo con otra cosa para no atascarme */
+#fotoAside {
+  width: 200px;
+}
+#seccionLateral {
+  display: flex;
+}
+#seccionLateral img {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px 10px;
+}
+#seccionLateral p {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px 10px;
+}
+/* No consigo sacar el aside */
+h2 {
+  font-size: 40px;
+  font-family: "Ranchers", cursive;
+  background-color: chocolate;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+} /* Yo no quería que el padding ocupara todo pero lo he arreglado centrando el texto */
+p span {
+  color: lawngreen;
+}
+#pie {
+  display: flex;
+
+  background-color: khaki;
+  padding: 50px;
+}
+#pie p {
+  align-items: flex-end;
+}
+/* Hacerla responsiva con media queries no me ha dado tiempo pero tampoco sé hacerlo. Igual con lo de linkear el formulario y hacer que salga una alerta (sé que eso será con JS alert("")) */
